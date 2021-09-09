@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="721.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bärenspiel.SecondController">
+   <children>
+      <ImageView fitHeight="743.0" fitWidth="1038.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="261.0" layoutY="41.0" prefHeight="75.0" prefWidth="495.0" text="Finde anhand der Würfel heraus, wie viele Höhlen und Bären es hat">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="wuerf" layoutX="467.0" layoutY="122.0" mnemonicParsing="false" onAction="#wuerfeln" text="Würfeln" />
+      <ImageView fitHeight="92.0" fitWidth="147.0" layoutX="87.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bilder/Bär.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="147.0" layoutX="87.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bilder/höhleb.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loesungBaer" layoutX="260.0" layoutY="400.0" promptText="Anzahl Bären" />
+      <TextField fx:id="loesungHoehle" layoutX="260.0" layoutY="502.0" prefHeight="31.0" prefWidth="187.0" promptText="Anzahl Höhlen" />
+      <Label fx:id="wuerfelText" layoutX="401.0" layoutY="170.0" prefHeight="21.0" prefWidth="208.0" />
+      <Button layoutX="467.0" layoutY="578.0" mnemonicParsing="false" onAction="#result" prefHeight="31.0" prefWidth="73.0" text="Lösen" />
+      <Label fx:id="valHöhlen" layoutX="494.0" layoutY="507.0" prefHeight="21.0" prefWidth="92.0" />
+      <Label fx:id="valBären" layoutX="494.0" layoutY="405.0" prefHeight="21.0" prefWidth="92.0" />
+      <Button layoutX="907.0" layoutY="651.0" mnemonicParsing="false" onAction="#resetText" prefHeight="31.0" prefWidth="73.0" text="Reset" />
+      <Button layoutX="124.0" layoutY="329.0" mnemonicParsing="false" onAction="#showResult" prefHeight="31.0" prefWidth="73.0" text="Lösung" />
+      <ImageView fx:id="imageView1" fitHeight="100.0" fitWidth="138.0" layoutX="92.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView5" fitHeight="100.0" fitWidth="138.0" layoutX="768.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView4" fitHeight="100.0" fitWidth="138.0" layoutX="599.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView3" fitHeight="100.0" fitWidth="138.0" layoutX="430.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView2" fitHeight="100.0" fitWidth="138.0" layoutX="261.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
